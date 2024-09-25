@@ -1,0 +1,65 @@
+n1=float(input("Enter first number"))
+n2=float(input("Enter second number"))
+q=str(input("Enter operator + or - or * or /"))
+if q == '+' :
+    print(n1, q, n2 ,'=', n1+n2)
+elif q == '-' :
+    print(n1,q,n2,'=',n1-n2)
+elif q =='*' :
+    print(n1,q,n2,'=',n1*n2)
+elif q == '/':
+    print(n1,q,n2,'=',n1/n2)
+else :
+    print("Invalid operator")
+
+
+
+
+per=float(input("Enter percentage: "))
+if(per>=80):
+    print("Grade=A+")
+elif(per>=70):
+    print("Grade=A")
+elif(per>=60):
+    print("Grade=B")
+elif(per>=50):
+    print("Grade=C")
+elif(per>=40):
+    print("Grade=D")
+elif(per>=34):
+    print("Grade=E")
+else:
+    print("Grade=F")
+
+
+
+
+n=int(input("Enter a number "))
+rev=0
+on=n
+while n>0:
+    rev=(rev*10)+(n%10)
+    n=n//10
+if(rev==on):
+    print(on,"is a palindrome.")
+else:
+    print(on,"is not a palindrome.")
+
+
+
+n=int(input("Enter a number "))
+i=2
+p=1
+if(n<=1):
+     p=0
+if(n==2):
+    p=1
+while i<n:
+    if(n%i==0):
+        p=0
+        break
+    i+=1
+if(p==1):
+    print(n,"is a prime number.")
+else:
+    print(n,"is not a prime number.")
