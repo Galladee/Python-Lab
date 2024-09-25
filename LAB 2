@@ -1,0 +1,112 @@
+n=int(input("Enter number to find whether its an Armstrong number or not: "))
+on=n
+count=0
+sum=0
+while n>0:
+    n=n//10
+    count=count+1
+n=on
+while n>0:
+    c=n%10
+    n=n//10
+    sum=sum+(c**count)
+if sum==on:
+    print(on, "is an Armstrong number.")
+else:
+    print(on, " is not an Armstrong number.")
+
+
+
+
+x=int(input("Enter number whose factorial is to be found: "))
+if x<0:
+    print("Enter non negative number to find factorial ")
+elif (x==0 or x==1):
+    print("The factorial of ",x, "is 1.")
+elif (x>1):
+    product=1
+    for i in range(2,x+1):
+        product=product*i
+    print("The factorial of ",x, "is", product,".")
+
+
+
+def fibonacci(n):
+    a=0
+    b=1
+    if (n>=1):
+       print(a, end=" ")
+    if(n>=2):
+       print(b, end=" ")
+    for i in range(3,n+1):
+       nf=a+b
+       print(nf, end=" ")
+       a,b=b,nf
+    
+   
+n=int(input("Enter number of terms "))
+fibonacci(n)
+
+
+
+x=int(input("Enter first number: "))
+y=int(input("Enter second number: "))
+if (x<y):
+    (x,y)=(y,x)
+lcm=x*y+1
+for i in range(x,(x*y+1)):
+    if (i%x==0 and i%y==0):
+        lcm=i
+        break
+print("the lcm of ",x,"and",y,"is",lcm)
+gcd=y
+for i in range(y,1,-1):
+    if(y%i==0 and x%i==0):
+        gcd=i
+        break
+print("The gcd of",x,"and",y,"is",gcd)
+
+
+
+
+x=int(input("Enter number: "))
+for i in range(1,11):
+    print(x,"*",i,"=",x*i)
+
+
+
+
+x=int(input("Enter a number to find whether the number is a perfect number or not: "))
+sum=1
+for i in range(2,x):
+    if (x%i==0):
+        sum=sum+i
+if sum==x:
+    print(x, "is a perfect number.")
+else:
+    print(x, "is not a perfect number.")
+
+
+
+def fact(n):
+    if (n == 0 or n == 1):
+        return 1
+    return (n * fact(n - 1))
+
+x = int(input("Enter number to find whether it is a strong number or not: "))
+sumon = 0
+on = x
+
+if (x < 0):
+    print(x, "is not a strong number.")
+elif (x == 0):
+    print("0 is not a strong number.")
+else:
+    while x > 0:
+        c = x % 10
+        x = x // 10
+        sumon += fact(c)
+    if (sumon == on):
+        print(on, "is a strong number.")
+    else:
+        print(on, "is not a strong number.")
