@@ -1,0 +1,49 @@
+Poject Report: Snake Game
+
+Course: Object-Oriented Programming (OOP) in Python
+Project Title: Snake Game
+Author: Kushagra Kalbhawar
+ID: 23FE10CSE00430
+University: Manipal University Jaipur
+
+
+
+
+1. Introduction: The Snake Game is a classic arcade game where the player controls a snake to collect food items to grow in length. The game ends if the snake collides with the boundaries or itself. This project was created as part of an Object-Oriented Programming in Python course to apply concepts such as classes, graphical interfaces, and event-driven programming.
+
+2. Project Objective The goal of this project was to develop a basic Snake Game using Python's tkinter library. The game features a snake that grows upon "eating" food items, a scoring system, and collision detection that ends the game if the snake hits the game area boundaries or itself.
+
+3. Design and Implementation The game is designed using two main classes: Snake and Food. These classes encapsulate the behaviors and attributes of the snake and food, respectively. The tkinter library is used to manage the graphical interface.
+
+Game Parameters: The game window is set to a width of 900 pixels and a height of 700 pixels, with each square in the game grid set to 50 pixels.
+
+Classes:
+
+	Snake: Handles the initialization of the snake's body using a list of coordinates and creates each segment 	on the canvas.
+
+	Food: Generates a food item at a random position within the game area.
+
+Gameplay Functions:
+
+	next_turn: Moves the snake in the current direction, checks if food has been consumed to update the score, 	and detects collisions with boundaries or itself.
+
+	change_direction: Allows the player to change the snake’s direction using the WASD keys.
+
+	check_collisions: Detects collisions with walls and the snake’s body.
+
+	game_over: Clears the canvas and displays a "GAME OVER" message.
+
+
+4. User Interface and Controls The game uses a tkinter window with a score label to display the player's current score. The w, a, s, and d keys control the snake's movement, providing an intuitive control scheme for players.
+
+
+5. Challenges:
+
+	Handling boundary and self-collisions to end the game smoothly.
+
+	Generating random food positions that are both within the game area and do not overlap with the snake.
+
+
+6. Conclusion:  This Snake Game successfully demonstrates the use of object-oriented principles in Python and event-driven programming through tkinter. It allows users to interactively play the game, with dynamic score updates and a clear game-over condition. Future improvements could include adding levels, obstacles, or enhanced graphics for a more engaging user experience.
+
+
